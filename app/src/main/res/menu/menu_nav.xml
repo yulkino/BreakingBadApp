@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/personsFragment"
+        android:title="Characters"
+        android:icon="@drawable/ic_person" />
+    <item android:id="@id/quotesFragment"
+        android:title="Quotes"
+        android:icon="@drawable/ic_quote" />
+    <item android:id="@id/episodeFragment"
+        android:title="Episodes"
+        android:icon="@drawable/ic_episode" />
+    <item android:id="@id/settingsFragment"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings" />
+</menu>

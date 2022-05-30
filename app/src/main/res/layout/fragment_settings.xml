@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.SettingsFragment"
+    android:padding="@dimen/padding">
+
+    <Button
+        android:id="@+id/night"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Enable dark mode" />
+
+    <Button
+        android:id="@+id/cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/night"
+        tools:text="Use cache" />
+
+    <Button
+        android:id="@+id/api"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cache"
+        tools:text="Allow api requests" />
+
+    <Button
+        android:id="@+id/lab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/api"
+        android:text="Open Lab 4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

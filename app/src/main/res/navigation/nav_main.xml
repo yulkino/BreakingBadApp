@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/personsFragment">
+
+    <fragment
+        android:id="@+id/episodeFragment"
+        android:name="com.example.breakingbadapp.ui.EpisodeFragment"
+        android:label="EpisodeFragment" >
+        <action
+            android:id="@+id/action_episodeFragment_to_episodeInfoFragment"
+            app:destination="@id/episodeInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personsFragment"
+        android:name="com.example.breakingbadapp.ui.PersonsFragment"
+        android:label="PersonsFragment" >
+        <action
+            android:id="@+id/action_personsFragment_to_personInfoFragment"
+            app:destination="@id/personInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quotesFragment"
+        android:name="com.example.breakingbadapp.ui.QuotesFragment"
+        android:label="QuotesFragment" />
+    <fragment
+        android:id="@+id/episodeInfoFragment"
+        android:name="com.example.breakingbadapp.ui.EpisodeInfoFragment"
+        android:label="fragment_episode_info"
+        tools:layout="@layout/fragment_episode_info" >
+        <argument
+            android:name="episode"
+            app:argType="com.example.domain.models.Episode" />
+    </fragment>
+    <fragment
+        android:id="@+id/personInfoFragment"
+        android:name="com.example.breakingbadapp.ui.PersonInfoFragment"
+        android:label="fragment_person_info"
+        tools:layout="@layout/fragment_person_info" >
+        <argument
+            android:name="person"
+            app:argType="com.example.domain.models.Person" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.breakingbadapp.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
